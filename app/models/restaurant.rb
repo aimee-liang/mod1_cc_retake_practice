@@ -1,10 +1,11 @@
 class Restaurant
     attr_accessor :name, :star_rating
+    attr_reader :owner
     @@all = []
 
     # initialized with RestaurantOwner, name, star_rating
-    def initialize(RestaurantOwner, name, star_rating)
-        @RestaurantOwner = RestaurantOwner
+    def initialize(owner, name, star_rating)
+        @owner = owner
         @name = name
         @star_rating = star_rating
         @@all << self

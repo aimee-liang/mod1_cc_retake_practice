@@ -3,20 +3,25 @@ class Recipe
     attr_accessor :description
     @@all = []
 
-    # initialized with a name and description
     def initialize(name, description)
         @name = name
         @description = description
         @@all << self
     end
 
-    # class method all
     def self.all
         @@all
     end
 
-    # menu items method returns an array of all Menu Item instances for the recipe
+    # - `Recipe#menu_items`
+    #     - returns an array of all the `MenuItem` instances for the `Recipe`.
+    def menu_items
+        MenuItem.all.select{|menu_items| menu_items.recipe == self}
+    end
 
     # restaurants returns an array of all restaurant instances that have recipe in menu
+    # def restaurants
+        # self.menu_items.
+    # end
 
 end
