@@ -3,17 +3,27 @@ class Restaurant
     attr_reader :owner
     @@all = []
 
-    # initialized with RestaurantOwner, name, star_rating
-    def initialize(owner, name, star_rating)
-        @owner = owner
+    def initialize(Restaurant_Owner, name, star_rating)
+        @Restaurant_Owner = RestaurantOwner
         @name = name
         @star_rating = star_rating
         @@all << self
     end
 
-    # class method all
     def self.all
         @@all
     end
+
+    def menu_items
+        MenuItems.all.select{|menu_items| menu_items.restaurant == self}
+    end
+
+    def owner
+    end
+
+    def recipes
+        self.menu_items.map{|menu_items| menu_items.recipes}
+    end
+
 
 end

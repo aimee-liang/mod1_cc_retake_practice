@@ -13,15 +13,15 @@ class Recipe
         @@all
     end
 
-    # - `Recipe#menu_items`
-    #     - returns an array of all the `MenuItem` instances for the `Recipe`.
     def menu_items
-        MenuItem.all.select{|menu_items| menu_items.recipe == self}
+        MenuItem.all.select{|menu_item| menu_item.recipe == self}
     end
 
     # restaurants returns an array of all restaurant instances that have recipe in menu
-    # def restaurants
-        # self.menu_items.
-    # end
+    def restaurants
+        self.menu_items{|menu_item| menu_item.restaurant}
+    end
+
+    
 
 end
