@@ -12,11 +12,9 @@ class RestaurantOwner
         @@all
     end
 
-    # - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance.
     def restaurants
+        Restaurant.all.select{|restaurant| restaurant.owner == self}
     end
-
-    # - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances.
 
     def menu_items
     end
