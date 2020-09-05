@@ -21,8 +21,16 @@ class Recipe
         self.menu_items.map{|menu_item| menu_item.restaurant}
     end
 
-    def average_price
-        
-    end
+    # def average_price
+    # end
+
+    # def higheset_price
+    # end
+
+    # def cheapest_restaurant
+    # end
+
+    # def self.inactive
+    # end
 
 end

@@ -17,6 +17,7 @@ class RestaurantOwner
     end
 
     def menu_items
+        self.restaurants.map{|restaurant| restaurant.menu_items}
     end
 
 end

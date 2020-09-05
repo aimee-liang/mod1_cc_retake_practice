@@ -62,27 +62,27 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 
 ### Object Relationship Methods
 
-#### Recipe
+#### Recipe - All work!
 <!-- - `Recipe#menu_items`
   - returns an array of all the `MenuItem` instances for the `Recipe`. -->
 <!-- - `Recipe#restaurants`
   - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu. -->
 
-#### Restaurant
+#### Restaurant - working!!
 <!-- - `Restaurant#menu_items`
   - returns an array of all the `MenuItem` instances for the `Restaurant`. -->
-- `Restaurant#owner`
-  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance
+<!-- - `Restaurant#owner`
+  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance -->
 <!-- - `Restaurant#recipes`
   - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu. -->
 
-#### RestaurantOwner
+#### RestaurantOwner - All work!
 <!-- - `RestaurantOwner#restaurants`
   - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance. -->
-- `RestaurantOwner#menu_items`
-  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances.
+<!-- - `RestaurantOwner#menu_items`
+  - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances. -->
 
-#### MenuItem
+#### MenuItem - working
 <!-- - `MenuItem#recipe`
   - returns the `Recipe` instance associated with the `MenuItem` instance
 - `MenuItem#restaurant`
@@ -104,11 +104,11 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 - `Recipe.inactive`
   - returns an array of `Recipe` instances that are not currently being sold at any restaurants.
 
-#### Restaurant
-- `Restaurant#has_dish?(recipe)`
-    - returns `true` if the dish is on the menu at the given restaurant and `false` if it is not. 
-- `Restaurant.highest_rated`
-    - returns the highest rated `Restaurant` instance.
+#### Restaurant - all working!
+<!-- - `Restaurant#has_dish?(recipe)`
+    - returns `true` if the dish is on the menu at the given restaurant and `false` if it is not.  -->
+<!-- - `Restaurant.highest_rated`
+    - returns the highest rated `Restaurant` instance. -->
 
 #### RestaurantOwner
 - `RestaurantOwner.average_age`

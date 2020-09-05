@@ -18,12 +18,20 @@ class Restaurant
         MenuItem.all.select{|menu_items| menu_items.restaurant == self}
     end
 
-    # def owner
-    # end
+    def owner
+        self.all.select{|restaurant| restaurant.restaurant_owner}
+    end
 
     def recipes
         self.menu_items.map{|menu_items| menu_items.recipe}
     end
 
+    def has_dish?(recipe)
+        self.menu_items.include?(recipe)
+    end
+
+    def self.highest_rated
+        self.all.max_by{|restaurant| restaurant.star_rating}
+    end
 
 end
