@@ -24,7 +24,8 @@ class RestaurantOwner
         self.all.sum{|owner| owner.age} / self.all.length
     end
 
-    # def sell_restaurant(restaurant, buyer)
-    # end
+    def sell_restaurant(restaurant, buyer)
+        
+    end
 
 end

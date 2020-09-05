@@ -26,7 +26,7 @@ class Recipe
     end
 
     def highest_price
-        self.menu_items.max{|menu_item| menu_item.price}
+        self.menu_items.map{|menu_item| menu_item.price}.max
     end
 
     def cheapest_restaurant

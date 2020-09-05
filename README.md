@@ -97,8 +97,8 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 #### Recipe
 <!-- - `Recipe#average_price`
     - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
-- `Recipe#highest_price`
-  - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance. 
+<!-- - `Recipe#highest_price`
+  - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
 <!-- - `Recipe#cheapest_restaurant`
   - returns the `Restaurant` instance where this `Recipe` instance is the cheapest.  -->
 - `Recipe.inactive`
