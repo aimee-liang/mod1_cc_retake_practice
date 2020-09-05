@@ -95,12 +95,12 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 ### Aggregate and Association Methods
 
 #### Recipe
-- `Recipe#average_price`
-    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance. 
+<!-- - `Recipe#average_price`
+    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
 - `Recipe#highest_price`
   - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance. 
-- `Recipe#cheapest_restaurant`
-  - returns the `Restaurant` instance where this `Recipe` instance is the cheapest. 
+<!-- - `Recipe#cheapest_restaurant`
+  - returns the `Restaurant` instance where this `Recipe` instance is the cheapest.  -->
 - `Recipe.inactive`
   - returns an array of `Recipe` instances that are not currently being sold at any restaurants.
 
@@ -111,14 +111,14 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
     - returns the highest rated `Restaurant` instance. -->
 
 #### RestaurantOwner
-- `RestaurantOwner.average_age`
-  - returns the average age of all the `RestaurantOwner`s
+<!-- - `RestaurantOwner.average_age`
+  - returns the average age of all the `RestaurantOwner`s -->
 - `RestaurantOwner#sell_restaurant(restaurant, buyer)`
   - transfers ownership of a `Restaurant` instance (which must belong to the current user) to the `buyer` which is a `RestaurantOwner` instance. 
 
-#### MenuItem
-- `MenuItem.most_expensive_item`
-    - returns the most expensive `MenuItem` instance
+#### MenuItem - working!
+<!-- - `MenuItem.most_expensive_item`
+    - returns the most expensive `MenuItem` instance -->
 
 
 

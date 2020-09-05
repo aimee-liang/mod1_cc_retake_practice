@@ -15,4 +15,8 @@ class MenuItem
         @@all
     end
 
+    def self.most_expensive_item
+        self.all.max_by{|menu_item| menu_item.price}
+    end
+
 end

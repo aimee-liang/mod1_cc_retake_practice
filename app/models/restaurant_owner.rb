@@ -20,4 +20,11 @@ class RestaurantOwner
         self.restaurants.map{|restaurant| restaurant.menu_items}
     end
 
+    def self.average_age
+        self.all.sum{|owner| owner.age} / self.all.length
+    end
+
+    # def sell_restaurant(restaurant, buyer)
+    # end
+
 end
