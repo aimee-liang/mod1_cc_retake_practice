@@ -18,7 +18,7 @@ chicken = Recipe.new("chicken sandwich", "spicy and crispy chicken sandwich")
 bread = Recipe.new("breadstick", "fresh breadsticks")
 kale = Recipe.new("salad", "refreshing kale salad")
 ##
-# testonly = Recipe.new("pass this test", "pls")
+testonly = Recipe.new("pass this test", "pls")
 
 ###
 resta = Restaurant.new(anna, "Resta", 5)
