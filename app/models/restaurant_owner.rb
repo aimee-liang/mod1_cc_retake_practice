@@ -25,7 +25,13 @@ class RestaurantOwner
     end
 
     def sell_restaurant(restaurant, buyer)
-        
+        self.restaurants.select do |r_i| 
+            if r_i = restaurant
+                r_i.owner = buyer
+            else
+                return false
+            end
+        end
     end
 
 end

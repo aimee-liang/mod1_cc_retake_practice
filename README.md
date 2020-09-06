@@ -113,8 +113,8 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 #### RestaurantOwner
 <!-- - `RestaurantOwner.average_age`
   - returns the average age of all the `RestaurantOwner`s -->
-- `RestaurantOwner#sell_restaurant(restaurant, buyer)`
-  - transfers ownership of a `Restaurant` instance (which must belong to the current user) to the `buyer` which is a `RestaurantOwner` instance. 
+<!-- - `RestaurantOwner#sell_restaurant(restaurant, buyer)` 
+  - transfers ownership of a `Restaurant` instance (which must belong to the current user) to the `buyer` which is a `RestaurantOwner` instance.  -->
 
 #### MenuItem - working!
 <!-- - `MenuItem.most_expensive_item`
