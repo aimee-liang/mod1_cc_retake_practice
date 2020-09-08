@@ -33,7 +33,7 @@ class Recipe
         self.menu_items.min_by{|menu_item| menu_item.price}
     end
 
-    def self.inactive
+    def self.inactive #this doesn't work/I'm not sure how to get it to
         MenuItem.all.reject{|menu_item| menu_item.recipe != nil}
     end
 
